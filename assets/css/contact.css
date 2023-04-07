@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto';
+	background: #070707;
+}
+
+.container {
+	width: 888px;
+	margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+	.container {
+		width: 761px;
+		padding-right: 24px;
+		padding-left: 24px;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		width: 100%;
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+}
+
+/*////////////////////////////    Navbar start   ////////////////////////*/
+
+.navbar {
+	margin: 36px 48px 139px 48px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar ul {
+	display: flex;
+	column-gap: 48px;
+}
+
+.navbar-logo {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 49px;
+	letter-spacing: -0.26em;
+	color: #cea52d;
+}
+
+.navbar__toggle-button {
+	position: absolute;
+	top: 3.25rem;
+	right: 5rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+}
+
+.navbar__toggle-button-bar {
+	height: 3px;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+.navbar-link {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 160%;
+	color: #a0a0a0;
+}
+
+.navbar-link:hover {
+	color: #cea52d;
+}
+
+.navbar-lang--content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	z-index: 1;
+	padding: 8px 12px;
+	border-radius: 6px;
+	background: rgb(213, 218, 209);
+	margin-left: -9px;
+}
+.navbar-lang--content a {
+	color: #a0a0a0;
+	display: block;
+}
+
+.navbar-lang--content a:hover,
+.navbar-lang--content a:active {
+	color: #cea52d;
+}
+
+.navbar-lang:hover .navbar-lang--content {
+	display: block;
+}
+
+.navbar-lang--content a:first-child {
+	margin-bottom: 8px;
+}
+@media (max-width: 1200px) {
+	.navbar {
+		margin-bottom: 48px;
+	}
+}
+
+@media (max-width: 768px) {
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+		margin-left: 16px;
+		margin-bottom: 59px;
+	}
+
+	.navbar__toggle-button {
+		display: flex;
+		right: 16px;
+	}
+	.navbar__links {
+		display: none;
+		width: 100%;
+	}
+
+	.navbar .navbar__links ul {
+		width: 100%;
+		flex-direction: column;
+	}
+	.navbar .navbar__links ul li {
+		text-align: center;
+	}
+	.navbar .navbar__links ul li a {
+		padding: 0.5rem 1rem;
+	}
+	.navbar .navbar__links.active {
+		display: flex;
+	}
+
+	.navbar-lang--content {
+		display: none;
+		position: static;
+		padding: 8px 281px;
+		border-radius: 6px;
+		margin-left: 0;
+	}
+}
+
+/*/ ///////////////////////////    Navbar end   ////////////////////////*/
+
+/*/ ///////////////////////////    Contact starts   ////////////////////////*/
+
+.contact {
+  text-align: center;
+}
+
+.contact__info {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.contact__info--title {
+  font-weight: 300;
+  font-size: 54px;
+  line-height: 63px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #cea52d;
+  margin-bottom: 60px;
+}
+
+.contact__info--desc {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 160%;
+  color: #a0a0a0;
+}
+
+/*/////////////////////////     Form Starts           ///////////////////// */
+
+.contact__form {
+  outline: none;
+  width: 612px;
+  border-radius: 26px;
+  font-weight: normal;
+  font-size: 24px;
+  padding-top: 20px;
+  padding-left: 48px;
+  padding-bottom: 20px;
+  line-height: 28px;
+  color: #a0a0a0;
+  border: none;
+}
+
+.contact__form--mr {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.contact__textarea {
+  width: 612px;
+  height: 350px;
+  border-radius: 26px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #a0a0a0;
+  border: none;
+  outline: none;
+  padding-top: 20px;
+  padding-left: 48px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  resize: none;
+}
+
+.contact__form-btn {
+  width: 612px;
+  border: none;
+  background: #cea52d;
+  border-radius: 26px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #070707;
+  padding: 20px;
+}
+/**********  Form Ends  **********/
+
+.contact__social {
+  width: 660px;
+  margin: 0 auto;
+  margin-top: 120px;
+  display: flex;
+  column-gap: 152px;
+}
+
+.contact__social div:first-child {
+  margin-bottom: 24px;
+}
+
+.contact__item {
+  display: flex;
+  column-gap: 12px;
+}
+
+
+.contact__desc {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #a0a0a0;
+}
+
+.contact__desc:hover {
+  color: #cea52d;
+}
+
+@media (max-width: 768px) {
+
+  .contact__form {
+    width: 100%;
+  }
+  .contact__textarea {
+    width: 100%;
+  }
+
+  .contact__form-btn {
+    width: 100%;
+  }
+
+  .contact__social {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 24px;
+  }
+}
+
+/*/ ///////////////////////////    Contact ends   ////////////////////////*/
+
+/*/ ///////////////////////////    social starts   ////////////////////////*/
+
+.social {
+	margin-top: 117px;
+	margin-bottom: 38px;
+	margin-left: 48px;
+	display: flex;
+	column-gap: 36px;
+}
+
+.social__icon:hover {
+	stroke: #cea52d;
+}
+
+@media (max-width: 768px) {
+	.social {
+		margin-top: 80px;
+		margin-bottom: 24px;
+		margin-left: 16px;
+	}
+}
+
+/*/ ///////////////////////////    social ends   ////////////////////////*/
